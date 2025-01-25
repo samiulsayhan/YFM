@@ -1,74 +1,155 @@
 [
-    {
-      "id": 1,
-      "title": "Godzilla Minus One (2023) Dual Audio [Hindi ORG & Japanese] BluRay 480p, 720p, 1080p & 4K UHD 2160p | GDRive | ESub",
-      "image": "https://i.ibb.co.com/w01jMfK/id-1.png",
-      "rating": 8.7,
-      "type": "Action & Adventure",
-      "releseDate": "Nov. 03, 2023",
-      "bgImg":"https://i.ibb.co.com/RHhhGGn/bg-1.jpg",
-      "subImg":{
-        "img1":"https://i.ibb.co.com/sV3VF64/id-11.png",
-        "img2":"https://i.ibb.co.com/7g5Kw2M/id-111.png",
-        "img3":"https://i.ibb.co.com/kSCg2c2/id-1111.png"
-      }
-    },
-    {
-      "id": 2,
-      "title": "Sonic The Hedgehog 3 (2024) Dual Audio [Hindi ORG & ENG] ORG WEB-DL 480p, 720p & 1080p | GDRive",
-      "image": "https://i.ibb.co.com/5hz1Lzg/id-2.jpg",
-      "rating": 8.3,
-      "type": "Action & Animation",
-      "releseDate": "Dec. 19, 2024",
-      "bgImg":"https://i.ibb.co.com/FxnKHz7/bg-2.jpg",
-      "subImg":{
-        "img1":"https://i.ibb.co.com/6bZZ9X5/id-22.png",
-        "img2":"https://i.ibb.co.com/TtpHQbm/id-222.png",
-        "img3":"https://i.ibb.co.com/8xH43Wk/id-2222.png"
-      }
-    },
-    {
-      "id": 3,
-      "title": "Marco (2024) [Hindi ORG] WEB-DL 480p, 720p, 1080p & 4K UHD 2160p | GDRive",
-      "image": "https://i.ibb.co.com/Yptbp6N/id-3.jpg",
-      "rating": 8.5,
-      "type": "Action & Adventure",
-      "releseDate": "Dec. 20, 2024",
-      "bgImg":"https://i.ibb.co.com/GRGR010/bg-3.jpg",
-      "subImg":{
-        "img1":"https://i.ibb.co.com/jMfpg67/id-33.png",
-        "img2":"https://i.ibb.co.com/HxyQ11Y/id-333.png",
-        "img3":"https://i.ibb.co.com/JcDHS4Z/id-3333.png"
-      }
-    },
-    {
-      "id": 4,
-      "title": "Pushpa 2 - The Rule - Reloaded (2024) EXTENDED [Extra 25 Mins] Dual Audio [Hindi ORG & Telugu] ORG WEB-DL 480p, 720p & 1080p | GDRive",
-      "image": "https://i.ibb.co.com/BV9fbyx/id-4.jpg",
-      "rating": 8.7,
-      "type": "Crime",
-      "releseDate": "Dec. 04, 2024",
-      "bgImg":"https://i.ibb.co.com/P6Cqp8j/bg-4.jpg",
-      "subImg":{
-        "img1":"https://i.ibb.co.com/k6TD8nm/id-44.png",
-        "img2":"https://i.ibb.co.com/h8mbyz5/id-444.png",
-        "img3":"https://i.ibb.co.com/R7BX8fx/id-4444.png"
-      }
-    },
-    {
-      "id": 5,
-      "title": "Kalki 2898 - AD (2024) [Hindi ORG] WEB-DL 480p, 720p, 1080p & 4K UHD 2160p | GDRive",
-      "image": "https://i.ibb.co.com/C6dXzZg/id-5.jpg",
-      "rating": 8.6,
-      "type": "Action & Adventure",
-      "releseDate": "Jun. 26, 2024",
-      "bgImg":"https://i.ibb.co.com/hDp7bvc/bg-5.jpg",
-      "subImg":{
-        "img1":"https://i.ibb.co.com/vXt6xrh/id-55.png",
-        "img2":"https://i.ibb.co.com/0Y5HT3s/id-555.png",
-        "img3":"https://i.ibb.co.com/Vjgm6nS/id-5555.png"
-      }
+  {
+    "id": 1,
+    "title": "Godzilla Minus One (2023) Dual Audio [Hindi ORG & Japanese] BluRay 480p, 720p, 1080p & 4K UHD 2160p | GDRive | ESub",
+    "image": "https://i.ibb.co.com/w01jMfK/id-1.png",
+    "rating": 8.7,
+    "type": "Action & Adventure",
+    "releseDate": "Nov. 03, 2023",
+    "audio":"Dual Audio",
+    "bgImg":"https://i.ibb.co.com/RHhhGGn/bg-1.jpg",
+    "subImg":{
+      "img1":"https://i.ibb.co.com/sV3VF64/id-11.png",
+      "img2":"https://i.ibb.co.com/7g5Kw2M/id-111.png",
+      "img3":"https://i.ibb.co.com/kSCg2c2/id-1111.png"
     }
-   
-   
+  },
+  {
+    "id": 2,
+    "title": "Sonic The Hedgehog 3 (2024) Dual Audio [Hindi ORG & ENG] ORG WEB-DL 480p, 720p & 1080p | GDRive",
+    "image": "https://i.ibb.co.com/5hz1Lzg/id-2.jpg",
+    "rating": 8.3,
+    "type": "Action & Animation",
+    "releseDate": "Dec. 19, 2024",
+    "audio":"Dual Audio",
+    "bgImg":"https://i.ibb.co.com/FxnKHz7/bg-2.jpg",
+    "subImg":{
+      "img1":"https://i.ibb.co.com/6bZZ9X5/id-22.png",
+      "img2":"https://i.ibb.co.com/TtpHQbm/id-222.png",
+      "img3":"https://i.ibb.co.com/8xH43Wk/id-2222.png"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Marco (2024) [Hindi ORG] WEB-DL 480p, 720p, 1080p & 4K UHD 2160p | GDRive",
+    "image": "https://i.ibb.co.com/Yptbp6N/id-3.jpg",
+    "rating": 8.5,
+    "type": "Action & Adventure",
+    "releseDate": "Dec. 20, 2024",
+    "audio":"[Hindi ORG]",
+    "bgImg":"https://i.ibb.co.com/GRGR010/bg-3.jpg",
+    "subImg":{
+      "img1":"https://i.ibb.co.com/jMfpg67/id-33.png",
+      "img2":"https://i.ibb.co.com/HxyQ11Y/id-333.png",
+      "img3":"https://i.ibb.co.com/JcDHS4Z/id-3333.png"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Pushpa 2 - The Rule - Reloaded (2024) EXTENDED [Extra 25 Mins] Dual Audio [Hindi ORG & Telugu] ORG WEB-DL 480p, 720p & 1080p | GDRive",
+    "image": "https://i.ibb.co.com/BV9fbyx/id-4.jpg",
+    "rating": 8.7,
+    "type": "Crime",
+    "releseDate": "Dec. 04, 2024",
+    "audio":"Dual Audio",
+    "bgImg":"https://i.ibb.co.com/P6Cqp8j/bg-4.jpg",
+    "subImg":{
+      "img1":"https://i.ibb.co.com/k6TD8nm/id-44.png",
+      "img2":"https://i.ibb.co.com/h8mbyz5/id-444.png",
+      "img3":"https://i.ibb.co.com/R7BX8fx/id-4444.png"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Kalki 2898 - AD (2024) [Hindi ORG] WEB-DL 480p, 720p, 1080p & 4K UHD 2160p | GDRive",
+    "image": "https://i.ibb.co.com/C6dXzZg/id-5.jpg",
+    "rating": 8.6,
+    "type": "Action & Adventure",
+    "releseDate": "Jun. 26, 2024",
+    "audio":"[Hindi ORG]",
+    "bgImg":"https://i.ibb.co.com/hDp7bvc/bg-5.jpg",
+    "subImg":{
+      "img1":"https://i.ibb.co.com/vXt6xrh/id-55.png",
+      "img2":"https://i.ibb.co.com/0Y5HT3s/id-555.png",
+      "img3":"https://i.ibb.co.com/Vjgm6nS/id-5555.png"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Night Hunter (2018) Dual Audio [Hindi ORG & ENG] WEB-DL 480p, 720p & 1080p | GDRive",
+    "image": "https://i.ibb.co.com/GTWVjDs/id-6.jpg",
+    "rating": 7.5,
+    "type": "Action & Hollywood",
+    "releseDate": "Aug. 19, 2019",
+    "audio":"Dual Audio",
+    "bgImg":"https://i.ibb.co.com/k30kjXB/bg-6.jpg",
+    "subImg":{
+      "img1":"https://i.ibb.co.com/CKS0MVr/id-66.png",
+      "img2":"https://i.ibb.co.com/rswKZ6w/id-666.png",
+      "img3":"https://i.ibb.co.com/PGHJf3Z/id-6666.png"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Rebel Moon - Chapter Two: Curse of Forgiveness (2024) [Director Cut] Dual Audio [Hindi ORG & ENG] NF WEB-DL 480p, 720p, 1080p & 4K UHD 2160p | GDRive",
+    "image": "https://i.ibb.co.com/SJZmmhb/id-7.png",
+    "rating": 8.8,
+    "type": "Action & Adventure & Drama",
+    "releseDate": "Aug. 02, 2024",
+    "audio":"Dual Audio",
+    "bgImg":"https://i.ibb.co.com/2yJF7jR/bg-7.jpg",
+    "subImg":{
+      "img1":"https://i.ibb.co.com/MhWydZJ/id-77.png",
+      "img2":"https://i.ibb.co.com/PZpBVKX/id-777.png",
+      "img3":"https://i.ibb.co.com/L8SJW7v/id-7777.png"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Sky Force (2025) [Hindi] PRE-HDRip 480p, 720p & 1080p | GDRive",
+    "image": "https://i.ibb.co.com/zJPg1Jg/id-8.jpg",
+    "rating": 8.2,
+    "type": "Thiller",
+    "releseDate": "Jan. 24, 2024",
+    "audio":"PRE-HDRip",
+    "bgImg":"https://i.ibb.co.com/mh7NwFt/bg-8.jpg",
+    "subImg":{
+      "img1":"https://i.ibb.co.com/bP0fYkW/id-88.png",
+      "img2":"https://i.ibb.co.com/KwH20hJ/id-888.png",
+      "img3":"https://i.ibb.co.com/0sJLHnB/id-8888.png"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Bagheera (2024) Dual Audio [Hindi ORG & Kannada] WEB-DL 480p, 720p & 1080p | GDRive",
+    "image": "https://i.ibb.co.com/WKX2X8j/id-9.png",
+    "rating": 6.5,
+    "type": "Action & Crime",
+    "releseDate": "Oct. 31, 2024",
+    "audio":"Dual Audio",
+    "bgImg":"https://i.ibb.co.com/CH6sRwW/bg-9.jpg",
+    "subImg":{
+      "img1":"https://i.ibb.co.com/Wg2SMzH/id-99.png",
+      "img2":"https://i.ibb.co.com/rm3WW3w/id-999.png",
+      "img3":"https://i.ibb.co.com/MBB8BBt/id-9999.png"
+    }
+  },
+  {
+    "id": 10,
+    "title": "King Kong (2005) Dual Audio [Hindi ORG & ENG] EXTENDED BluRay 480p, 720p & 1080p | GDrive",
+    "image": "https://i.ibb.co.com/0XN8pL5/id-10.jpg",
+    "rating": 8.2,
+    "type": "Drama & Adventure",
+    "releseDate": "Dec. 12, 2005",
+    "audio":"Dual Audio",
+    "bgImg":"https://i.ibb.co.com/Gsxx6T6/bg-10.jpg",
+    "subImg":{
+      "img1":"https://i.ibb.co.com/r76j8nD/id-101.png",
+      "img2":"https://i.ibb.co.com/pdvKjtz/id-1011.png",
+      "img3":"https://i.ibb.co.com/b1jqPHN/id-10111.png"
+    }
+  }
+  
+  
+ 
 ]

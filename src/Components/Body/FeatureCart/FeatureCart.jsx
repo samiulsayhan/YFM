@@ -2,10 +2,11 @@ import PropTypes from "prop-types";
 import { MdStar } from "react-icons/md";
 
 const FeatureCart = ({ data }) => {
+  const data1=[...data.slice(0,5)];
   return (
     <div >
-      <div className="max-h-[200px] grid grid-cols-5 gap-5">
-        {data.map((user) => (
+      <div className=" grid grid-cols-5 gap-5">
+        {data1.map((user) => (
           <div key={user.id} className="flex ">
             <div className="relative">
               <img

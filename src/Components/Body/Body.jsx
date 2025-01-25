@@ -1,7 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaCaretRight, FaCaretLeft } from "react-icons/fa";
-import { MdStar } from "react-icons/md";
 import PropTypes from "prop-types";
 // Import Swiper styles
 import "swiper/css";
@@ -13,6 +12,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useLoaderData } from "react-router-dom";
 import FeatureCart from "./FeatureCart/FeatureCart";
 import LatestMoviesCart from "./LatestMoviesCart/LatestMoviesCart";
+import LatestUpdate from "./LatestUpdate/LatestUpdate";
 
 // text shorten
 const truncateText = (text, maxLength) =>
@@ -114,67 +114,56 @@ const Body = ({ letter }) => {
 
               {/* after top slider all content  */}
               {/* Fetures section */}
-              <div className="p-8 border-b-1 border-gray-500">
-                {/* feture text */}
-                <div className="flex justify-between items-center pb-5 ">
-                  {/* text */}
-                  <div className="flex gap-2 items-center">
-                    <div className="bg-red-700 border-none h-5.5  p-0.5 inline"></div>
-                    <h1 className="text-white text-lg font-thin">Featured</h1>
+              <div className="px-8 ">
+                <div className="border-b-1 border-gray-600 py-8">
+                  {/* feture text */}
+                  <div className="flex justify-between items-center pb-5 ">
+                    {/* text */}
+                    <div className="flex gap-2 items-center">
+                      <div className="bg-red-700 border-none h-5.5  p-0.5 inline"></div>
+                      <h1 className="text-white text-lg font-thin">Featured</h1>
+                    </div>
+                    {/* left right icons */}
+                    <div className="flex text-2xl text-gray-500 items-center">
+                      <FaCaretLeft />
+                      <FaCaretRight />
+                    </div>
                   </div>
-                  {/* left right icons */}
-                  <div className="flex text-2xl text-gray-500 items-center">
-                    <FaCaretLeft />
-                    <FaCaretRight />
+                  {/* feture cart */}
+                  <div>
+                    <FeatureCart data={data}></FeatureCart>
                   </div>
-                </div>
-                {/* feture cart */}
-                <div>
-                  <FeatureCart data={data}></FeatureCart>
                 </div>
               </div>
 
               {/* latest movies section*/}
               <div className="p-8">
-                {/* feture text */}
-                <div className="flex justify-between items-center pb-5">
-                  {/* text */}
-                  <div className="flex gap-2 items-center">
-                    <div className="bg-red-700 border-none h-5.5  p-0.5 inline"></div>
-                    <h1 className="text-white text-lg font-thin">Latest Movies</h1>
+                <div className="border-b-1 border-gray-600 py-8">
+                  {/* feture text */}
+                  <div className="flex justify-between items-center pb-5">
+                    {/* text */}
+                    <div className="flex gap-2 items-center">
+                      <div className="bg-red-700 border-none h-5.5  p-0.5 inline"></div>
+                      <h1 className="text-white text-lg font-thin">
+                        Latest Movies
+                      </h1>
+                    </div>
+                    {/* SEE ALL button */}
+                    <button className="text-[9px] items-center font-thin text-white bg-red-600 px-2 pb-0.5 pt-1 rounded-sm">
+                      SEE ALL
+                    </button>
                   </div>
-                  {/* SEE ALL button */}
-                    <button className="text-[9px] items-center font-thin text-white bg-red-600 px-2 pb-0.5 pt-1 rounded-sm">SEE ALL</button>
-                </div>
-                {/* LatestMovies cart */}
-                <div>
-                  <LatestMoviesCart data={data}></LatestMoviesCart>
+                  {/* LatestMovies cart */}
+                  <div>
+                    <LatestMoviesCart data={data} truncateText={truncateText}></LatestMoviesCart>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* latest updates */}
             <div className="flex-[2] p-8  max-w-[400px] ">
-              <h2 className="text-white text-lg font-thin">Latest updates</h2>
-              <div className=" gap-4">
-                {data.map((user) => (
-                  <div key={user.id} className="flex my-4 bg-gray-950">
-                    <img className="max-h-[100px]" src={user.image} alt="" />
-                    <div className="text-[12px] font-extralight flex flex-col p-3 ">
-                      <h2 className="text-white">
-                        {truncateText(user.title, 40)}
-                      </h2>
-                      <p className="text-gray-400">{user.releseDate}</p>
-                      <div className="flex items-center gap-0.5 pt-1">
-                        <MdStar className="text-white border-none text-[15px] " />
-                        <p className="text-gray-500 text-[12px] font-semibold ">
-                          {user.rating}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <LatestUpdate data={data} truncateText={truncateText}></LatestUpdate>
             </div>
           </div>
         </div>
