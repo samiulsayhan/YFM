@@ -25,7 +25,7 @@ const LatestMoviesCart = ({ data, truncateText }) => {
             </div>
             {/* title section */}
             <div>
-              <a href="#" className="text-gray-200 hover:text-red-600">{truncateText(user.title, 18)}</a>
+              <a href="movie-view" className="text-gray-200 hover:text-red-600">{truncateText(user.title, 18)}</a>
               <p className="text-gray-600 font-thin text-[12px]">{user.releseDate}</p>
             </div>
           </div>

@@ -33,13 +33,13 @@ const LatestUpdate = ({ data, truncateText }) => {
       <h2 className="text-white text-lg font-thin">Latest updates</h2>
       <div className=" gap-4">
         {data1.map((user) => (
-          <div key={user.id} className="flex my-4 bg-gray-950">
+          <div key={user.id} className="flex my-4 cursor-pointer bg-gray-950/60 hover:bg-gray-950 ">
             <img className="max-h-[100px]" src={user.image} alt="" />
             <div className="text-[12px] font-extralight flex flex-col p-3 ">
-              <h2 className="text-white">{truncateText(user.title, 40)}</h2>
+              <h2 className="text-white hover:text-red-600"><a href="movie-view">{truncateText(user.title, 40)}</a></h2>
               <p className="text-gray-400">{user.releseDate}</p>
               <div className="flex items-center gap-0.5 pt-1">
-                <MdStar className="text-white border-none text-[15px] " />
+                <MdStar className="text-white hover:text-red-600 border-none text-[15px] " />
                 <p className="text-gray-500 text-[12px] font-semibold ">
                   {user.rating}
                 </p>
@@ -57,7 +57,7 @@ const LatestUpdate = ({ data, truncateText }) => {
                 Categories.map((user,idx)=>(
                     <div key={idx} className="border-b-1 border-gray-600 flex gap-2 items-center py-3 text-gray-400">
                         <MdOutlineKeyboardArrowRight className="text-xl" />
-                        <a href="#" className="hover:text-red-600">{user}</a>
+                        <a href="" className="hover:text-red-600">{user}</a>
                     </div>
                 ))
             }
