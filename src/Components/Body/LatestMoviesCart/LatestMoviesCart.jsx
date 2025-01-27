@@ -1,13 +1,17 @@
 import PropTypes from "prop-types";
 import { MdStar } from "react-icons/md";
 
+
+
 const LatestMoviesCart = ({ data, truncateText }) => {
+  
+  
   return (
     <div>
-      <div className=" grid grid-cols-5 gap-5">
+      <div className=" grid lg:grid-cols-5 md:grid-cols-5 grid-cols-3 gap-5">
         {data.map((user) => (
           <div key={user.id} className="flex flex-col gap-2 ">
-            <div className="relative">
+            <div  className="relative">
               <img
                 src={user.image}
                 alt=""
@@ -25,7 +29,7 @@ const LatestMoviesCart = ({ data, truncateText }) => {
             </div>
             {/* title section */}
             <div>
-              <a href="movie-view" className="text-gray-200 hover:text-red-600">{truncateText(user.title, 18)}</a>
+              <a href={`/movie-view/${user.id}`}  className="text-gray-200 hover:text-red-600">{truncateText(user.title, 18)}</a>
               <p className="text-gray-600 font-thin text-[12px]">{user.releseDate}</p>
             </div>
           </div>
@@ -41,3 +45,4 @@ LatestMoviesCart.propTypes = {
 };
 
 export default LatestMoviesCart;
+

@@ -1,13 +1,21 @@
 import PropTypes from "prop-types";
 import { MdStar } from "react-icons/md";
+// import { useNavigate } from "react-router-dom";
 
 const FeatureCart = ({ data }) => {
+  // const navigate = useNavigate();
+
+  const handleClick =(id)=>{
+    // navigate(`/movie-view/${id}`);
+    window.location.href = `/movie-view/${id}`;
+  }
+
   const data1=[...data.slice(0,5)];
   return (
     <div >
-      <div className=" grid grid-cols-5 gap-5">
+      <div className=" grid lg:grid-cols-5 md:grid-cols-5 grid-cols-3 gap-5">
         {data1.map((user) => (
-          <div key={user.id} className="flex ">
+          <div onClick={()=>handleClick(user.id)} key={user.id} className="flex ">
             <div className="relative">
               <img
                 src={user.image}

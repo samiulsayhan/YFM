@@ -3,11 +3,14 @@ import Header from "../Header/Header";
 
 
 
+
 const Home = () => {
+    
     return (
         <div>
             <Header></Header>
             <Outlet></Outlet>
+            
             
             
         </div>

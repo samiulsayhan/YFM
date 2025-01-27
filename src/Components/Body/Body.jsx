@@ -1,5 +1,5 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import { FaCaretRight, FaCaretLeft } from "react-icons/fa";
 import PropTypes from "prop-types";
 // Import Swiper styles
@@ -8,113 +8,60 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./styles.css";
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { useLoaderData } from "react-router-dom";
+
+// import { useLoaderData } from "react-router-dom";
 import FeatureCart from "./FeatureCart/FeatureCart";
 import LatestMoviesCart from "./LatestMoviesCart/LatestMoviesCart";
 import LatestUpdate from "./LatestUpdate/LatestUpdate";
+import { useEffect, useState } from "react";
+import TopSlider from "./TopSlider/TopSlider";
+import TopSlider_1 from "./TopSlider/TopSlider_1";
 
 // text shorten
 const truncateText = (text, maxLength) =>
   text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
 
 const Body = ({ letter }) => {
+  const [data,setData]=useState([]);
+
+  useEffect(()=>{
+    fetch('../../../public/AllData.json')
+    .then(res => res.json())
+    .then(data =>setData(data))
+  },[])
   // json data loding
-  const data = useLoaderData();
+  // const data = useLoaderData();
 
   const data2 = [...data.slice(1, 5), ...data.slice(0, 1)];
   console.log(data.length);
 
   return (
-    <div className="bg-gray-600">
-      <div className="container m-auto px-8">
+    <div className="bg-gray-600 ">
+      <div className="lg:container lg:m-auto lg:px-8">
         <div className="border-solid ">
           {/* top show A-Z */}
-          <div className=" text-gray-500 p-4 flex justify-between border-b-1 border-gray-500 bg-gray-900">
+          <div className={" text-gray-500 p-4 flex justify-between border-b-1 border-gray-500 bg-gray-900"}>
             {letter.map((letter, idx) => (
               <div key={idx}>
                 <a href="#">{letter}</a>
               </div>
             ))}
+          
           </div>
+          {/* after header and A-Z section */}
           <div className="bg-gray-900 flex ">
             {/* middle content div */}
-            <div className="flex-[6] border-r-1 border-gray-500">
+            <div className="lg:flex-[6] border-r-1 border-gray-500">
               {/* slider */}
-              <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 p-8 gap-5">
-                {/* 1st slider */}
-                <div className="">
-                  <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                      delay: 2500,
-                      disableOnInteraction: false,
-                    }}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className=" max-h-[200px] "
-                  >
-                    <div className="">
-                      {data.map((user, idx) => (
-                        <div key={idx}>
-                          <SwiperSlide>
-                            <div className="relative">
-                              <img className="" src={user.bgImg} alt="" />
-                              <p className="absolute bottom-5 p-3 text-gray-200 font-medium">
-                                {truncateText(user.title, 35)}
-                              </p>
-                              <p className="absolute bottom-0 left-0 text-gray-200 text-[12px] p-3">
-                                {user.releseDate}
-                              </p>
-                              <p className="absolute bottom-2 right-0 bg-red-600 text-[12px] text-white px-2.5 py-0.5">
-                                MOVIE
-                              </p>
-                            </div>
-                          </SwiperSlide>
-                        </div>
-                      ))}
-                    </div>
-                  </Swiper>
-                </div>
-                {/* 2nd slider */}
-                <div className="">
-                  <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                      delay: 2500,
-                      disableOnInteraction: false,
-                    }}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className=" max-h-[200px] "
-                  >
-                    <div className="">
-                      {data2.map((user, idx) => (
-                        <div key={idx}>
-                          <SwiperSlide>
-                            <div className="relative">
-                              <img className="" src={user.bgImg} alt="" />
-                              <p className="absolute bottom-5 p-3 text-gray-200 font-medium">
-                                {truncateText(user.title, 35)}
-                              </p>
-                              <p className="absolute bottom-0 left-0 text-gray-200 text-[12px] p-3">
-                                {user.releseDate}
-                              </p>
-                              <p className="absolute bottom-2 right-0 bg-red-600 text-[12px] text-white px-2.5 py-0.5">
-                                MOVIE
-                              </p>
-                            </div>
-                          </SwiperSlide>
-                        </div>
-                      ))}
-                    </div>
-                  </Swiper>
-                </div>
+              <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:p-8 md:p-6 p-4  gap-5">
+                {/* slider import */}
+                <TopSlider data={data} truncateText={truncateText}></TopSlider>
+                <TopSlider_1 data={data2} truncateText={truncateText}></TopSlider_1>
               </div>
 
               {/* after top slider all content  */}
               {/* Fetures section */}
-              <div className="px-8 ">
+              <div className="lg:px-8 md:px-6 px-4 ">
                 <div className="border-b-1 border-gray-600 py-8">
                   {/* feture text */}
                   <div className="flex justify-between items-center pb-5 ">
@@ -137,7 +84,7 @@ const Body = ({ letter }) => {
               </div>
 
               {/* latest movies section*/}
-              <div className="p-8">
+              <div className="lg:p-8 md:p-6 p-4" >
                 <div className="border-b-1 border-gray-600 py-8">
                   {/* feture text */}
                   <div className="flex justify-between items-center pb-5">
@@ -155,17 +102,24 @@ const Body = ({ letter }) => {
                   </div>
                   {/* LatestMovies cart */}
                   <div>
-                    <LatestMoviesCart data={data} truncateText={truncateText}></LatestMoviesCart>
+                    <LatestMoviesCart data={data}  truncateText={truncateText}></LatestMoviesCart>
                   </div>
                 </div>
               </div>
             </div>
+            {/* middle content ends */}
 
             {/* latest updates */}
-            <div className="flex-[2] p-8  max-w-[400px] ">
+            <div className="lg:block hidden flex-[2] lg:p-8 md:p-6 p-4   max-w-[400px] ">
               <LatestUpdate data={data} truncateText={truncateText}></LatestUpdate>
             </div>
           </div>
+
+          {/* hidden calagory section */}
+          {/* latest updates */}
+          <div className="lg:hidden flex-[2] lg:p-8 md:p-6 p-4   bg-gray-900">
+              <LatestUpdate data={data} truncateText={truncateText}></LatestUpdate>
+            </div>
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@ const LatestUpdate = ({ data, truncateText }) => {
           <div key={user.id} className="flex my-4 cursor-pointer bg-gray-950/60 hover:bg-gray-950 ">
             <img className="max-h-[100px]" src={user.image} alt="" />
             <div className="text-[12px] font-extralight flex flex-col p-3 ">
-              <h2 className="text-white hover:text-red-600"><a href="movie-view">{truncateText(user.title, 40)}</a></h2>
+              <h2 className="text-white hover:text-red-600"><a href={`/movie-view/${user.id}`}>{truncateText(user.title, 40)}</a></h2>
               <p className="text-gray-400">{user.releseDate}</p>
               <div className="flex items-center gap-0.5 pt-1">
                 <MdStar className="text-white hover:text-red-600 border-none text-[15px] " />
