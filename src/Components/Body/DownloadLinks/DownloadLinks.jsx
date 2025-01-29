@@ -4,22 +4,22 @@ import PropTypes from "prop-types";
 const DownloadLinks = () => {
   return (
     <div className="">
-      
       {/* headers  */}
-      <div className="flex  border-b-2 p-2 border-gray-600 font-bold">
-        <div className="flex lg:gap-36 gap-6 flex-[1] ">
+      <div className="flex  border-b-2 py-3 lg:px-2 md:px-2 px-12 border-gray-600 font-semibold sm:w-full w-screen overflow-x-auto sm:overflow-visible">
+        <div className="flex xl:gap-36 lg:gap-20 md:gap-30 gap-6 flex-[1] ">
           <h1 className=" text-white">Download</h1>
           <h1 className=" text-white">Quality</h1>
         </div>
-        <div className="flex lg:gap-36 gap-6 flex-[1] ">
-          <h1 className="pl-18 text-white">Language</h1>
+        <div className="flex xl:gap-36 lg:gap-22 md:gap-28 gap-6 flex-[1] ">
+          <h1 className="xl:pl-18 lg:pl-8 md:pl-18 pl-10 text-white">
+            Language
+          </h1>
           <h1 className=" text-white">Size</h1>
         </div>
       </div>
-
       
       
-
+      
     </div>
   );
 };
@@ -30,7 +30,9 @@ DownloadLinks.propTypes = {
 
 export default DownloadLinks;
 
-{/* 4K UHD */}
+{
+  /* 4K UHD */
+}
 // {/* <div className="py-3 px-4 flex justify-between border-b-1 hover:bg-black/40 text-gray-200 border-gray-600">
 // <div className="flex gap-30 items-center  flex-[1] ">
 //   <a href="#" className="flex text-red-600  gap-2 text-[12px]"><BiWorld className="text-white" /> Download</a>

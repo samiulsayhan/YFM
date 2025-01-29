@@ -18,10 +18,9 @@ import TopSlider from "./TopSlider/TopSlider";
 import TopSlider_1 from "./TopSlider/TopSlider_1";
 
 // text shorten
-const truncateText = (text, maxLength) =>
-  text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
 
-const Body = ({ letter }) => {
+
+const Body = ({ letter ,truncateText}) => {
   const [data,setData]=useState([]);
 
   useEffect(()=>{
@@ -37,7 +36,7 @@ const Body = ({ letter }) => {
 
   return (
     <div className="bg-gray-600 ">
-      <div className="lg:container lg:m-auto lg:px-8">
+      <div className="xl:container xl:m-auto xl:px-8">
         <div className="border-solid ">
           {/* top show A-Z */}
           <div className={" text-gray-500 p-4 flex justify-between border-b-1 border-gray-500 bg-gray-900"}>
@@ -128,6 +127,7 @@ const Body = ({ letter }) => {
 
 Body.propTypes = {
   letter: PropTypes.array,
+  truncateText: PropTypes.func
 };
 
 export default Body;

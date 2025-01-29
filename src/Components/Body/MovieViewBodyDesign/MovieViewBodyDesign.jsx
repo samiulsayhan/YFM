@@ -10,7 +10,7 @@ const MovieViewBodyDesign = ({ user, data, truncateText }) => {
         {/* middle content div */}
         <div className="lg:flex-[6]  lg:border-r-1 border-gray-500">
           {/* movie image and titles */}
-          <div className="xl:p-8 p-6 border-b-3 border-gray-600">
+          <div className="xl:p-8 p-6 border-b-3 border-gray-600 md:w-auto w-screen">
             {/* movie-view section div */}
             {/* here i use filter to use specific image that was click by id */}
             <div className="flex justify-between gap-4 ">
@@ -35,16 +35,16 @@ const MovieViewBodyDesign = ({ user, data, truncateText }) => {
             </div>
           </div>
           {/* some button info , trailer ,links , cast */}
-          <div className="lg:px-8 md:px-6 px-4 py-3 border-b-3 border-gray-600 md:flex grid grid-cols-2 md:gap-3 gap-1">
-            <a href="#" className="px-4.5 py-1.5 text-[13px] rounded-sm justify-center flex text-white bg-red-600">Info</a>
-            <a href="#" className="px-4.5 py-1.5 text-[13px] rounded-sm justify-center flex md:hover:text-red-600 text-white md:bg-white/0 bg-gray-600/60">Trailer</a>
-            <a href="#" className="px-4.5 py-1.5 text-[13px] rounded-sm justify-center flex md:hover:text-red-600 text-white md:bg-white/0 bg-gray-600/60">Links</a>
-            <a href="#" className="px-4.5 py-1.5 text-[13px] rounded-sm justify-center flex md:hover:text-red-600 text-white md:bg-white/0 bg-gray-600/60">Cast</a>
+          <div className="lg:px-6 md:px-6 px-2 py-3 border-b-3 border-gray-600 md:flex grid grid-cols-2 md:gap-3 gap-1 md:w-auto w-screen">
+            <a href="#" className="md:px-4.5 px-0 py-1.5 text-[13px] rounded-sm justify-center flex text-white bg-red-600">Info</a>
+            <a href="#" className="md:px-4.5 px-0 py-1.5 text-[13px] rounded-sm justify-center flex md:hover:text-red-600 text-white md:bg-white/0 bg-gray-600/60">Trailer</a>
+            <a href="#" className="md:px-4.5 px-0 py-1.5 text-[13px] rounded-sm justify-center flex md:hover:text-red-600 text-white md:bg-white/0 bg-gray-600/60">Links</a>
+            <a href="#" className="md:px-4.5 px-0 py-1.5 text-[13px] rounded-sm justify-center flex md:hover:text-red-600 text-white md:bg-white/0 bg-gray-600/60">Cast</a>
           </div>
 
 
           {/* screenshot & synopsis */}
-          <div className="px-12 py-8 border-b-3 border-gray-600 flex flex-col text-white gap-3">
+          <div className="px-12 py-8 border-b-3 border-gray-600 flex flex-col text-white gap-3 md:w-auto w-screen">
             <h2 className="pb-2 text-[17px]">Synopsis</h2>
             <p>Screenshots</p>
             {/* img1 , img2 , img3 */}
@@ -76,12 +76,12 @@ const MovieViewBodyDesign = ({ user, data, truncateText }) => {
             </div>
           </div>
           {/* download */}
-          <div className="lg:px-8 md:px-6 px-4 py-3 border-b-3 border-gray-600 flex items-center gap-3">
+          <div className="lg:px-6 md:px-6 px-6 py-3 border-b-3 border-gray-600 flex items-center gap-3 md:w-auto w-screen">
             <h1 className="text-xl text-gray-300">Links</h1>
             <a href="#" className="bg-red-600 px-2 rounded-sm text-[12px] text-white">Download</a>
           </div>
           {/* download links */}
-          <div className="lg:px-12 md:px-6 px-4 py-8">
+          <div className="lg:px-12 md:px-10  md:py-8 py-6 md:w-auto w-screen">
             <DownloadLinks></DownloadLinks>
           </div>
         </div>

@@ -18,18 +18,20 @@ import Body from "./Components/Body/Body.jsx";
 
 
 const letter = ['#','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+const truncateText = (text, maxLength) =>
+  text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
 
 const router =createBrowserRouter([
   {
     path:'/',
-    element:<Home></Home>,
+    element:<Home truncateText={truncateText}></Home>,
     children:[
       
       {
         path:"/main",
         
         // element:<Body></Body>
-        element:<Body letter={letter}></Body>
+        element:<Body truncateText={truncateText} letter={letter}></Body>
       },
       {
         path:"/movie-view/:id",
