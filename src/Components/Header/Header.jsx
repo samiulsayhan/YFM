@@ -29,7 +29,7 @@ const Header = ({truncateText}) => {
           {/* logo */}
           <div className="hidden lg:flex lg:p-4 p-2 bg-gray-800 gap-1 items-center justify-center">
             <GiFilmProjector className="text-4xl text-gray-200" />
-            <a href="/main" className="text-2xl text-red-700 font-bold">
+            <a href="/" className="text-2xl text-red-700 font-bold">
               YFM <span className="text-white">.COM</span>
             </a>
           </div>
@@ -37,7 +37,7 @@ const Header = ({truncateText}) => {
           <div className="lg:block hidden">
             <ul className="flex text-sm text-gray-400 font-semibold gap-8">
               <li className="flex">
-                <a href="/main">Movies</a> <FaSortDown />
+                <a href="/">Movies</a> <FaSortDown />
               </li>
               <li className="flex">
                 Genres <FaSortDown />
@@ -48,10 +48,10 @@ const Header = ({truncateText}) => {
             </ul>
           </div>
         </div>
-        {/* logo */}
+        {/* hidden logo */}
         <div className="lg:hidden lg:p-4 p-2 flex gap-1 items-center justify-center">
           <GiFilmProjector className="text-4xl text-gray-200" />
-          <a href="/main" className="text-2xl text-red-700 font-bold">
+          <a href="/" className="text-2xl text-red-700 font-bold">
             YFM <span className="text-white">.COM</span>
           </a>
         </div>
@@ -72,7 +72,7 @@ const Header = ({truncateText}) => {
 };
 
 Header.propTypes = {
-  truncateText: PropTypes.func
+  truncateText: PropTypes.func,
 };
 
 export default Header;

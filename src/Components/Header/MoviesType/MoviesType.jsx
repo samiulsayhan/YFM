@@ -50,8 +50,8 @@ const MoviesType = ({truncateText}) => {
                     {
                         Movies.map((movie,idx)=>(
                             <div key={idx} className='pt-1 pl-2'>
-                                <a className='md:hidden pt-1 pl-2 font-bold' href="/main">-  {truncateText(movie,16)}</a>
-                                <a className='md:block hidden pt-1 pl-2 font-bold' href="/main">-  {movie}</a>
+                                <a className='md:hidden pt-1 pl-2 font-bold' href="/">-  {truncateText(movie,16)}</a>
+                                <a className='md:block hidden pt-1 pl-2 font-bold' href="/">-  {movie}</a>
                             </div>
                         ))
                     }
@@ -63,8 +63,8 @@ const MoviesType = ({truncateText}) => {
                     {
                         Genres.map((movie,idx)=>(
                             <div key={idx} className='pt-1 pl-2'>
-                                <a className=' md:hidden font-bold' href="/main">-  {truncateText(movie,16)}</a>
-                                <a className=' md:block hidden font-bold' href="/main">-  {movie}</a>
+                                <a className=' md:hidden pt-1 pl-2 font-bold' href="/">-  {truncateText(movie,16)}</a>
+                                <a className=' md:block hidden pt-1 pl-2 font-bold' href="/">-  {movie}</a>
                             </div>
                         ))
                     }
@@ -74,7 +74,7 @@ const MoviesType = ({truncateText}) => {
     );
 };
 MoviesType.propTypes = {
-    truncateText: PropTypes.func
+    truncateText: PropTypes.func,
 };
 
 export default MoviesType;

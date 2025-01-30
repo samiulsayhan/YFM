@@ -16,15 +16,16 @@ import LatestUpdate from "./LatestUpdate/LatestUpdate";
 import { useEffect, useState } from "react";
 import TopSlider from "./TopSlider/TopSlider";
 import TopSlider_1 from "./TopSlider/TopSlider_1";
+import LetterBar from "../../Components/LetterBar/LetterBar"
 
 // text shorten
 
 
-const Body = ({ letter ,truncateText}) => {
+const Body = ({ truncateText}) => {
   const [data,setData]=useState([]);
 
   useEffect(()=>{
-    fetch('../../../public/AllData.json')
+    fetch('/AllData.json')
     .then(res => res.json())
     .then(data =>setData(data))
   },[])
@@ -39,14 +40,7 @@ const Body = ({ letter ,truncateText}) => {
       <div className="xl:container xl:m-auto xl:px-8">
         <div className="border-solid ">
           {/* top show A-Z */}
-          <div className={" text-gray-500 p-4 flex justify-between border-b-1 border-gray-500 bg-gray-900"}>
-            {letter.map((letter, idx) => (
-              <div key={idx}>
-                <a href="#">{letter}</a>
-              </div>
-            ))}
-          
-          </div>
+          <LetterBar></LetterBar>
           {/* after header and A-Z section */}
           <div className="bg-gray-900 flex ">
             {/* middle content div */}
@@ -126,8 +120,8 @@ const Body = ({ letter ,truncateText}) => {
 };
 
 Body.propTypes = {
-  letter: PropTypes.array,
-  truncateText: PropTypes.func
+  
+  truncateText: PropTypes.func,
 };
 
 export default Body;
